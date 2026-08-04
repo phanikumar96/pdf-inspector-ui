@@ -8,8 +8,6 @@ Built by **Phani Siginamsetty** using the WebAssembly compilation of Firecrawl's
 
 **[▶ Access the Live Demo](https://phanikumar96.github.io/pdf-inspector-ui/)**
 
-![PDF Inspector Web UI — a 7-page tagged PDF parsed to Markdown in 86 ms, entirely in the browser](docs/screenshot.jpg)
-
 ---
 
 ## Technical Overview
