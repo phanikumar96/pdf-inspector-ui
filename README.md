@@ -2,7 +2,7 @@
 
 # PDF Inspector UI
 
-A zero-dependency client-side web application designed for the [pdf-inspector](https://github.com/firecrawl/pdf-inspector) Rust library by [Firecrawl](https://firecrawl.dev) [1]. This tool enables users to convert PDF documents into structured Markdown directly within the web browser. Because the underlying Rust parser is compiled to WebAssembly (WASM), processing is executed entirely client-side—requiring no backend infrastructure, server uploads, or API credentials.
+A zero-dependency client-side web application designed for the [pdf-inspector](https://github.com/firecrawl/pdf-inspector) Rust library by [Firecrawl](https://firecrawl.dev). This tool enables users to convert PDF documents into structured Markdown directly within the web browser. Because the underlying Rust parser is compiled to WebAssembly (WASM), processing is executed entirely client-side—requiring no backend infrastructure, server uploads, or API credentials.
 
 Built by **Phani Siginamsetty** using the WebAssembly compilation of Firecrawl's pdf-inspector [1].
 
