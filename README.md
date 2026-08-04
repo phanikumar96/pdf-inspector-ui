@@ -4,7 +4,7 @@
 
 A zero-dependency client-side web application designed for the [pdf-inspector](https://github.com/firecrawl/pdf-inspector) Rust library by [Firecrawl](https://firecrawl.dev). This tool enables users to convert PDF documents into structured Markdown directly within the web browser. Because the underlying Rust parser is compiled to WebAssembly (WASM), processing is executed entirely client-side—requiring no backend infrastructure, server uploads, or API credentials.
 
-Built by **Phani Siginamsetty** using the WebAssembly compilation of Firecrawl's pdf-inspector [1].
+Built by **Phani Siginamsetty** using the WebAssembly compilation of Firecrawl's pdf-inspector.
 
 **[▶ Access the Live Demo](https://phanikumar96.github.io/pdf-inspector-ui/)**
 
@@ -70,7 +70,7 @@ The application is composed of static files. Since single-threaded WASM executio
 
 ## Updating the Parser Engine
 
-The `vendor/` directory contains WebAssembly bindings generated from the [pdf-inspector](https://github.com/firecrawl/pdf-inspector) Rust crate [1]. To update this output with a new engine revision:
+The `vendor/` directory contains WebAssembly bindings generated from the [pdf-inspector](https://github.com/firecrawl/pdf-inspector) Rust crate  . To update this output with a new engine revision:
 
 1. Install `wasm-pack`:
    ```bash
@@ -93,11 +93,11 @@ The `vendor/` directory contains WebAssembly bindings generated from the [pdf-in
 ## Operational Notes
 
 - **Remote URL Input & CORS:** Fetching remote URLs is restricted by the destination host's Cross-Origin Resource Sharing (CORS) policies. To handle this, remote URL requests are piped through public proxies (`corsproxy.io` or `allorigins.win`). For sensitive, proprietary, or private documents, always utilize the file uploader, ensuring data remains entirely inside your browser sandbox.
-- **Scanned Document Handling:** `pdf-inspector` is structured as a structural and semantic layout analyzer; it does not perform optical character recognition (OCR) [1]. Image-based files are identified as `Scanned` or `ImageBased`, indicating which pages require an external OCR step.
+- **Scanned Document Handling:** `pdf-inspector` is structured as a structural and semantic layout analyzer; it does not perform optical character recognition (OCR)  . Image-based files are identified as `Scanned` or `ImageBased`, indicating which pages require an external OCR step.
 - **On-Screen JSON View Optimization:** To keep the JSON browser tab clean and responsive, the `markdown` property text is omitted from the on-screen display. The full payload is preserved intact when downloading or copying from the JSON viewer.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. The pre-compiled WASM binary in the `vendor/` directory is compiled from the MIT-licensed code at [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector) [1]. Sample testing documents are provided from the original upstream repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. The pre-compiled WASM binary in the `vendor/` directory is compiled from the MIT-licensed code at [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector)  . Sample testing documents are provided from the original upstream repository.
