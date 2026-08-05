@@ -66,6 +66,7 @@ This project contains zero external JavaScript dependencies or build tools.
 
 The application is composed of static files. Since single-threaded WASM execution does not require cross-origin isolation headers (`COOP`/`COEP`), it is compatible with all major static web hosts. To host your own, point GitHub Pages, Cloudflare Pages, Netlify, or Vercel at the repository root folder without specifying a build command or output directory.
 
+
 ---
 
 ## Updating the Parser Engine
